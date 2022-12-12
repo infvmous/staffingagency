@@ -69,9 +69,8 @@ button:hover{
 }
 
 .carouse-img{
-    height: 600px;
-    width: 100%;
-    object-fit: cover;
+   height: 500px;
+   object-fit: cover;
 }
 
 .our-industries{
@@ -79,7 +78,7 @@ button:hover{
    grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
    justify-content: center;
-    width: 50%;
+    width: 60%;
     margin: 0px auto;
     text-align: left;
 }
@@ -304,14 +303,15 @@ text-align: center;
 }
 
 .award-con{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .award img{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
 }
 
 .award{
@@ -325,11 +325,7 @@ text-align: center;
     animation-duration: 1s;
 }
 
-@media (max-width: 599px){
-    .award-con{
-      padding: 30px;
-    }
-}
+
 
 .award:hover{
     transform: translateY(-3px);
@@ -352,7 +348,6 @@ h1, h2, h3{
 
 
 .container{
-    margin: 1.9rem 0;
     padding: 1.6rem 1.7rem !important;
     overflow-x: hidden !important;
 }
