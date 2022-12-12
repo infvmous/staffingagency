@@ -7,12 +7,12 @@ google.charts.load("current", {packages:["corechart"]});
           ['Creative',      2],
           ['Health',  2],
           ['IT', 2],
-          ['Energy',    8]
+          ['Energy',    6]
         ]);
 
         var options = {
           title: '2022 Hiring Trends',
-          pieHole: 0.2,
+          pieHole: 0.3,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
