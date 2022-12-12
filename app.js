@@ -1,20 +1,22 @@
-google.charts.load("current", {packages:["corechart"]});
-      google.charts.setOnLoadCallback(drawChart);
-      function drawChart() {
-        var data = google.visualization.arrayToDataTable([
-          ['Jobs', 'Trends per Day'],
-          ['Construction',     10],
-          ['Creative',      2],
-          ['Health',  2],
-          ['IT', 2],
-          ['Energy',    6]
-        ]);
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
 
-        var options = {
-          title: '2022 Hiring Trends',
-          pieHole: 0.3,
-        };
+function drawChart() {
 
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-      }
+  var data = google.visualization.arrayToDataTable([
+    ['jobs', 'trends'],
+    ['Industrial',     10],
+    ['Health',      3],
+    ['Education',  2],
+    ['Legal', 2],
+    ['Creative',    7]
+  ]);
+
+  var options = {
+    title: '2022 Hiring Trends'
+  };
+
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+  chart.draw(data, options);
+}
