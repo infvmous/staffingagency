@@ -79,9 +79,15 @@ button:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
+   
 }
 
+
+@media (max-with: 600px){
+    .table-cotainer{
+     padding: 10px 40px;
+}
+}
 
 table{
     border-collapse: separate;
