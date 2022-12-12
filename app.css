@@ -309,7 +309,7 @@ span{
 }
 
 
-.ma-img{
+.chart{
 display: flex;
 align-items: center;
 justify-content: center;
@@ -317,7 +317,7 @@ overflow: hidden;
 text-align: center;
 }
 
-#donutchart {
+#piechart {
     cursor: pointer;
 }
 .address a{
