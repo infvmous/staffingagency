@@ -386,11 +386,3 @@ h1, h2, h3{
 }
 
 
-
-    @media (max-width: 599px) {
-        .conatiner, .meet-us, .available-jobs, .carousel-container, .footer{
-            padding: 30px;
-            overflow-x: hidden;
-    }
-
-}
