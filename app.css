@@ -86,7 +86,16 @@ button:hover{
 @media (max-with: 600px){
     .table-cotainer{
      padding: 10px 40px;
+     overflow: hidden;
 }
+    table{
+        width: 80%;
+         padding: 30px;
+    }
+    tr{
+        width: 80%;
+        padding: 30px;
+    }
 }
 
 table{
@@ -99,6 +108,8 @@ table{
 tbody{
     border: none !important;
 }
+
+
 tr{
     padding: 4px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
