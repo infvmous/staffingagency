@@ -10,7 +10,7 @@ body{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.2 !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .nav-container{
