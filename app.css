@@ -342,6 +342,18 @@ text-align: center;
 }
 
 
+@media (max-width: 600px) {
+    .award-con{
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .award img{
+        width: 70px;
+        max-width: 70px;
+        object-fit: cover;
+    }
+}
+
 h1, h2, h3{
     font-family: 'Bree Serif', serif !important;
 }
