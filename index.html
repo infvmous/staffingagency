@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/93554a374d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <link rel="stylesheet" href="/app.css">
+    <style>
+        @media (max-width: 600px){
+    #donutchart{
+        height: 200px;
+        width: 200px;
+    }
+}
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <!--Nav starts here-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid nav-container">
+    <a class="navbar-brand" href="#"> <img src="/Screenshot 2022-12-10 at 8.05.54 PM.png" alt=""> </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Find Jobs</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link" href="#">Our Locations</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="tel: 888-000-888">Contact Us <i class="fa-solid fa-phone"></i></a>
+          </li>   
+      </ul>
+      <div class="login">
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal">Log In <i class="fa-solid fa-right-to-bracket"></i></button>
+      </div>
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign in to your account</h5>
+          <p type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></p>
+        </div>
+        <div class="modal-body">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter Username" required>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password" required>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+            <label for="Remember me">Remember me</label>
+            <input type="checkbox" class="form-check-input">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          <button type="button" class="btn btn-secondary" >Sign Up</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</nav>
+
+<!--carousel-->
+    <div class="container-fluid my-5 carousel-container">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://cdn.pixabay.com/photo/2017/01/14/10/56/people-1979261_960_720.jpg" class="d-block img-fluid w-100 carouse-img" alt="our-staff">
+      <div class="carousel-caption d-md-block">
+        <button class="btn btn-primary btn-lg">Hire Talent</button>
+       <button class=" btn btn-primary btn-lg">Find Jobs</button>
+      </div>
+    </div>
+  </div>
+</div>
+<hr>
+    </div>
+     <h3>You’re in good company</h3>
+<div class="container award-con">
+    <div class="award"><img src="https://img.icons8.com/color/512/world-cup.png" alt=""> 
+    <p class="curve">Best Employers for Diversity</p>
+    </div>
+    <div class="award"><img src="https://img.icons8.com/color/512/world-cup.png" alt="">
+        <p class="curve">World’s Most Admired Companies</p>
+    </div>
+    <div class="award"><img src="https://img.icons8.com/color/512/world-cup.png" alt="">
+        <p class="curve">2022 Best Company </p></div>
+</div>
+
+    <div class="table-cotainer">
+        <p class="p-1">Whether you need to find top talent, your next great job opportunity or a consulting <br>
+            solution for managing your business and resourcing challenges, we can help.<br></p>
+        <h5>Some of our Industries</h5>
+        <table class="table w-50">
+            <tbody>
+              <tr >
+                <td> Construction <img src="https://img.icons8.com/material-rounded/512/road-worker.png" alt=""></td>
+                <td>Creative <img src="https://img.icons8.com/material-rounded/512/innovation.png" alt=""></td>
+                <td>Education <img src="https://img.icons8.com/ios-filled/512/book-reading.png" alt=""></td>
+              </tr>
+            </tbody>
+            <tbody>
+                <tr >
+                  <td>Energy <img src="https://img.icons8.com/material-outlined/512/conflict.png" alt=""></td>
+                  <td>Engineering <img src="https://img.icons8.com/external-justicon-lineal-justicon/512/external-engineering-avatar-and-occupation-justicon-lineal-justicon.png" alt=""></td>
+                  <td>Finacial Services <img src="https://img.icons8.com/windows/512/merchant-account.png" alt=""></td>
+                </tr>
+              </tbody>
+              <tbody>
+                <tr >
+                  <td>IT <img src="https://img.icons8.com/material-outlined/512/computer-support.png" alt=""></td>
+                  <td>Health <img src="https://img.icons8.com/material/512/caduceus.png" alt=""></td>
+                  <td>Legal <img src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/512/external-legal-due-diligence-icongeek26-glyph-icongeek26.png" alt=""></td>
+                </tr>
+              </tbody>
+          </table>
+    </div>
+    <div class="conatiner available-jobs">
+        <div class="col-12">
+            <h2>Available Jobs</h2>
+            <label for="see jobs">Find your next job today</label>
+            <input class="job-info" type="text" placeholder="What are you looking for"><button class="job-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="jobs">
+        <div class="job-board">
+         <div class="job-title" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><p >Material Handler (Transportation and Material Moving)<span>Dallas, TX Full-Time</span></p>
+            <div class="collapse" id="collapseExample">
+                    <div class="card body">
+                        The Material Handler will focus on maintaining inventory and filling orders for a production warehouse. Additional responsibilities include loading and unloading material, general housekeeping of the warehouse, and going on deliveries with drivers to clients. 
+                        The Material Handler will report to a warehouse near the Wells Branch/ Round Rock area.
+                    </div>
+                <button class="btn btn-danger">Apply Now</button>
+              </div>
+            </div>
+
+            <div class="job-title" data-bs-toggle="collapse" data-bs-target="#collapseExamples" aria-expanded="false" aria-controls="collapseExample"><p >Industrial Sewer<span>Indianapolis, IN Full-Time</span></p>
+                <div class="collapse" id="collapseExamples">
+                    <div class="card card-body">
+                        Maintain open and professional communication with members from Advertising and Merchandising
+                    </div>
+                    <button class="btn btn-danger">Apply Now</button>
+                  </div>
+                </div>
+                <div class="job-title" data-bs-toggle="collapse" data-bs-target="#collapseThird" aria-expanded="false" aria-controls="collapseExample"><p >Account Manager (Management) <span>Las Vegas, NV Full-Time</span></p>
+                    <div class="collapse" id="collapseThird">
+                        <div class="card card-body">
+                            This job does not have set hours and applicant must be flexible and have open availability. We are looking for an enthusiastic, motivated, and organized individual who can manage and train others, and do basic account management such as; 
+                            scheduling, time keeping, supervision, and compliance. 
+                        </div>
+                        <button class="btn btn-danger">Apply Now</button>
+                      </div>
+                    </div>
+                    <div class="job-title" data-bs-toggle="collapse" data-bs-target="#collapseForth" aria-expanded="false" aria-controls="collapseExample"><p >On-Site Manager<span>Denver, CO Full-Time</span></p>
+                        <div class="collapse" id="collapseForth">
+                            <div class="card card-body">
+                                looking for a Manager who is dedicated to running a 2nd shift crew at one of our largest clients in Dallas, Texas. As an On-Site Manager you will be responsbile for managing and 
+                                coordinating temporary employees at a client's location.
+                            </div>
+                            <button class="btn btn-danger">Apply Now</button>
+                          </div>
+                        </div>
+                        <div class="job-title" data-bs-toggle="collapse" data-bs-target="#collapseFifth" aria-expanded="false" aria-controls="collapseExample"><p >Digital Marketing Specialist<span>Indianapolis, IN Full-Time</span></p>
+                            <div class="collapse" id="collapseFifth">
+                                <div class="card card-body">
+                                    Thorough understanding of marketing elements including traditional and digital marketing such as SEO/social media and market research methods.
+                                </div>
+                                <button class="btn btn-danger">Apply Now</button>
+                              </div>
+                            </div>
+
+                            <div class="accordion accordion-flush w-50" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="flush-headingOne">
+                                    <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                        View All Opportunities                                    </button>
+                                  </h2>
+                                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body"><p>MS Science Teacher {Sign On Bonus}<span> Indianapolis, IN Full-Time</span></p></div>
+                                    <div class="accordion-body"><p>Shipping Office Clerk <span> Indianapolis, IN Full-Time</span></p></div>
+                                    <div class="accordion-body"><p>Freight Receiving Associate(Park 100 Area) <span> Indianapolis, IN Full-Time</span></p></p></div>
+                                  </div>
+                                </div>
+                            </div>      
+  </div>                       
+</div>
+
+    <div class="container-fluid meet-us">
+        <div class="col">
+            <h1>WHAT MAKES US, US</h1>
+            <p>We live our values. It’s what makes us, us. So we’ve created communities within our company dedicated to advancing women in leadership, supercharging diversity across the board, and helping to make a difference by giving back in the world.</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-4 meet-staff"> <img class="img-fluid" src="https://cdn.pixabay.com/photo/2017/05/19/12/38/entrepreneur-2326419_960_720.jpg" alt=""> </div>
+            <div class="col-12 col-md-4 meet-staff"> <img class="img-fluid" src="https://cdn.pixabay.com/photo/2018/01/04/21/15/young-3061652_960_720.jpg" alt=""> </div>
+            <div class="col-12 col-md-4 meet-staff"> <img  class="img-fluid"src="https://cdn.pixabay.com/photo/2019/12/17/17/09/woman-4702060_960_720.jpg" alt=""> </div>
+        </div>
+    </div>
+        <div class="container map mt-4 mb-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="address">
+                        <h3>Our Offices</h3>
+                        <p><i class="fa-solid fa-location-pin"></i></p>
+                        <p>H33 W 33rd St</p>
+                        <p>Indianapolis, IN 46999</p>
+                        <a href="tel:702-333-0000 ">Tel: 702-333-0000</a>
+                        <hr>
+                        <p><i class="fa-solid fa-location-pin"></i></p>
+                        <p>933 E 99thrd St</p>
+                        <p>Las Vegas, NV 46292</p>
+                        <a href="tel:702-333-0000 ">Tel: 702-333-0000</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="ma-img">
+                        <div id="donutchart" style="width: 500px; height: 370px; font-family: 'Noto Sans', sans-serif; font-size: large;" > </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--Footer-->
+    <div class="container-fluid mt-5 footer">
+        <div class="row">
+            <div class="col-12">
+                <p>Ready to work with HB1 Jobs</p>
+                <button class="btn btn-outline-danger me-3">Find a Job</button><button class="btn btn-outline-danger">Hire Someone</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+           <div class="col">
+            <ul class="list-group">
+                <h3>Follow Us</h3>
+                <li class="list-group-item"> <a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li class="list-group-item"><a href=""><i class="fa-brands fa-twitter"></i></a> </li>
+                <li class="list-group-item"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li class="list-group-item"> <a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+           </div>
+           <div class="col">
+            <ul class="list-group">
+             <h3>Information</h3>
+                <li class="list-group-item"> <a href="">About</a></li>
+                <li class="list-group-item"> <a href="">Contact</a></li>
+                <li class="list-group-item"><a href="">Terms of Use</a></li>
+                <li class="list-group-item"><a href="">News</a></li>
+              </ul>
+           </div>
+           <div class="col">
+            <ul class="list-group">
+               <h3>Services</h3>
+                <li class="list-group-item"><a href="">All Services</a></li>
+                <li class="list-group-item"><a href="">Staffing Services</a></li>
+                <li class="list-group-item"><a href="">Managed Services</a></li>
+                <li class="list-group-item"><a href="">Managed Services</a></li>
+              </ul>
+           </div>
+        </div> 
+        <div class="col">
+            <p class="text-muted mt-3">2022 by Adedamola Ogundipe</p>
+        </div>
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
