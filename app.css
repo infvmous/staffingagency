@@ -74,53 +74,40 @@ button:hover{
     object-fit: cover;
 }
 
-.table-cotainer{
+.our-industries{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   justify-content: center;
+    padding: 0px 200px;
+    text-align: left;
+}
+
+@media (max-width: 600px){
+    .our-industries{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       text-align: center;
+        
+    }
+}
+
+.our-jobs{
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-   
-}
-
-
-@media (max-with: 600px){
-    table{
-     padding: 10px 40px;
-     overflow: hidden;
-     max-width: 500px !important;}
-}
-
-
-table{
-    border-collapse: separate;
-    text-align: center;
-    background: #CFD2CF;
-}
-tbody{
-    border: none !important;
-}
-
-
-tr{
-    padding: 4px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-td{
-    border: 2px solid rgb(238, 238, 238);
-    cursor: pointer;
     white-space: nowrap;
-    font-weight: bold;
+    justify-content: center;
+    gap: 2px;
+    margin: 2px;
+    padding: 5px;
+     text-align: left;
 }
 
-td:hover{
-    background: #eaeaea;
-    color: #16213E;
-}
-
-table img{
+.our-jobs img{
     width: 20px;
+    padding: 0;
 }
+
 
 .meet-staff{
     margin-bottom: 5px;
