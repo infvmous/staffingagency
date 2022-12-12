@@ -87,16 +87,14 @@ button:hover{
     table{
      padding: 10px 40px;
      overflow: hidden;
-     max-width: 500px !important;
+     max-width: 500px !important;}
 }
-}
+
 
 table{
     border-collapse: separate;
     text-align: center;
     background: #CFD2CF;
-    overflow-x: hidden;
-    width: 100%;
 }
 tbody{
     border: none !important;
