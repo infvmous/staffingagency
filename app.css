@@ -9,8 +9,9 @@
 body{
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    line-height: 1.2 !important;
+    line-height: 1.4 !important;
     overflow-x: hidden !important;
+    letter-spacing: normal;
 }
 
 .nav-container{
