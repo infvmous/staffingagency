@@ -84,7 +84,7 @@ button:hover{
 
 
 @media (max-with: 600px){
-    .table{
+    table{
      padding: 10px 40px;
      overflow: hidden;
      max-width: 500px !important;
