@@ -87,6 +87,7 @@ button:hover{
     .table{
      padding: 10px 40px;
      overflow: hidden;
+     max-width: 500px !important;
 }
 }
 
