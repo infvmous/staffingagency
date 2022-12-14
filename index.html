@@ -13,6 +13,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/app.css">
     <title>HB1 Staffing</title>
 </head>
@@ -54,7 +55,7 @@
             <div class="mb-3 row">
                 <label for="staticEmail" class="col-sm-2 col-form-label">Username</label>
                 <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Enter Username" required>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Enter Username" required>
                 </div>
               </div>
               <div class="mb-3 row">
@@ -93,17 +94,17 @@
 <hr>
     </div>
     <div class="good-compant mt-5">
-      <h3>You’re in good company</h3>
+      <h3 data-aos="fade-down">You’re in good company</h3>
     </div>
 <div class="container award-con ">
   <div class="row">
-    <div class="col award"><img src="https://img.icons8.com/color/512/world-cup.png" alt=""> 
+    <div class="col award" data-aos="fade-up"><img src="https://img.icons8.com/color/512/world-cup.png" alt=""> 
     <p class="curve">Best Employers for Diversity</p>
     </div>
-    <div class="col award"><img src="https://img.icons8.com/color/512/world-cup.png" alt="">
+    <div class="col award" data-aos="fade-up"><img src="https://img.icons8.com/color/512/world-cup.png" alt="">
         <p class="curve">World’s Most Admired Companies</p>
     </div>
-    <div class="col award"><img src="https://img.icons8.com/color/512/world-cup.png" alt="">
+    <div class="col award" data-aos="fade-up"><img src="https://img.icons8.com/color/512/world-cup.png" alt="">
         <p class="curve">2022 Best Company </p></div>
       </div>
 </div>
@@ -112,7 +113,7 @@
         <p class="text-center">Whether you need to find top talent, your next great job opportunity or a consulting <br>
           solution for managing your business and resourcing challenges, we can help.<br></p>
       <h5>Some of our Industries</h5>
-      <div class=" row our-industries">
+      <div class=" row our-industries" data-aos="fade-up">
         <div class="col our-jobs"><p>Construction <img src="https://img.icons8.com/material-rounded/512/road-worker.png" alt=""></p> </div>
         <div class="col our-jobs"> <p>Creative <img src="https://img.icons8.com/material-rounded/512/innovation.png" alt=""></p></div>
         <div class="col our-jobs"> <p>Education <img src="https://img.icons8.com/ios-filled/512/book-reading.png" alt=""></p></div>
@@ -121,14 +122,14 @@
             <div class="col our-jobs"><p>Finacial Services <img src="https://img.icons8.com/windows/512/merchant-account.png" alt=""></p></div>
               </div>
             </div>
-    <div class="conatiner available-jobs mt-5">
+    <div class="conatiner available-jobs mt-5" data-aos="fade-up">
         <div class="col-12">
             <h2>Available Jobs</h2>
             <label for="see jobs">Find your next job today</label>
             <input class="job-info" type="text" placeholder="What are you looking for"><button class="job-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="jobs">
-        <div class="job-board">
+        <div class="job-board" data-aos="fade-up">
          <div class="job-title" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><p >Material Handler (Transportation and Material Moving)<span>Dallas, TX Full-Time</span></p>
             <div class="collapse" id="collapseExample">
                     <div class="card body">
@@ -190,7 +191,7 @@
   </div>                       
 </div>
 
-    <div class="container-fluid meet-us mt-5">
+    <div class="container-fluid meet-us mt-5" data-aos="fade-out">
         <div class="col">
             <h1>WHAT MAKES US, US</h1>
             <p>We live our values. It’s what makes us, us. So we’ve created communities within our company dedicated to advancing women in leadership, supercharging diversity across the board, and helping to make a difference by giving back in the world.</p>
@@ -201,7 +202,7 @@
             <div class="col-12 col-md-4 meet-staff"> <img  class="img-fluid"src="https://cdn.pixabay.com/photo/2019/12/17/17/09/woman-4702060_960_720.jpg" alt=""> </div>
         </div>
     </div>
-        <div class="container chart">
+        <div class="container chart"  data-aos="fade-left">
                         <div id="piechart" style="width: 500px; height: 400px; font-family: 'Noto Sans', sans-serif;"> </div>
         </div>
     <!--Footer-->
@@ -243,5 +244,12 @@
         </div> 
     </div>
     <script src="/app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      AOS.init({
+        duration: 500,
+      });
+    </script>
 </body>
 </html>

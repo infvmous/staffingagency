@@ -337,13 +337,6 @@ text-align: center;
 }
 
 
-@keyframes awards {
-    from{opacity: 0;}
-    to{
-        opacity: 9;
-    }
-}
-
 
 @media (max-width: 600px) {
     .award-con{
